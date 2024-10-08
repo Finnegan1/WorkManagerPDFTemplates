@@ -18,7 +18,6 @@ The template file is a handlebars file.
 This file is used to generate the PDF.
 
 the following variables are available:
-
 - currentDate: The current date (type: string)
 - startDate: The start date of the work (type: string)
 - endDate: The end date of the work (type: string)
@@ -29,3 +28,17 @@ the following variables are available:
 - information: The information of the area (type: string)
 - forestSection: The forest section of the area (type: string)
 - trailsInArea: A list of the trails in the area (type: string[])
+
+### Iclude other files (like images)
+
+You can include other files (like images) in the template.
+To include a file, you have to add it in the folder of the template **in the top level of the folder**.
+Then you can reference it in the template.hbs file by its name.
+
+#### example:
+
+(assuming there is a file called `header.png` in the template folder)
+
+```
+<img src="header.png">
+```
